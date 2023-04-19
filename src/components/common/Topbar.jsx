@@ -14,7 +14,7 @@ const Topbar = () => {
           <div className="hidden md:block">
             <ul className="flex items-center space-x-6">
               <li>
-                <Link to="/create-account">Home</Link>
+                <Link to="/">Home</Link>
               </li>
               <li>
                 <Link to="/dashboard">Dashboard</Link>
@@ -47,7 +47,7 @@ const Topbar = () => {
       <div
         className={`${
           mobileMenuShow === true ? "top-16" : "-top-48"
-        } bg-black text-white absolute left-0 right-0 top-16 px-8 py-4 pt-8 md:hidden`}>
+        } bg-gray-50 absolute left-0 right-0 px-8 py-4 pt-8 md:hidden transform transition-all duration-500`}>
         <ul className="space-y-6">
           <li>
             <Link to="/create-account">Home</Link>
